@@ -2,15 +2,16 @@
 
 It is surprisingly hard to get data from aws dynamodb to metabase.
 
+## Athena
 Connect aws athena to metabase.
 Why Athena?
 Athena lets us query data in S3 using standard SQL
 
-Get data to S3 from dynamodb
+## Get data to S3 from dynamodb
 - create a bucket in s3
 - feedback-orders
 
-AWS Glue
+## AWS Glue
 - serverless data integration service
 - ETL (extract, transform, and load) service
 - need to use glue to change it from json to parquet file
@@ -19,14 +20,12 @@ AWS Glue
 - crawler runs on JSON database in S3, exported from dynamodb
 
 
-
-
-
+## buckets
 - create bucket in s3.
 - export from s3 to a bucket (JSON)
 - create empty s3 bucket for parquet file 
 - add data to bucket?
 
-
+## buckets I created
 - feedback-orders -> s3 table exported from dynamodb (JSON content)
 - feedback-orders-parquet -> s3 table exported from dynamodb (parquet content)
