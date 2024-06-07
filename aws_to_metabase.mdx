@@ -33,3 +33,32 @@ Athena lets us query data in S3 using standard SQL
 
 ## info
 - https://www.upsolver.com/blog/amazon-data-pipeline-and-amazon-glue-evaluating-comparing-and-contrasting
+
+
+
+## Guide
+- https://www.youtube.com/watch?v=EsFSUxy7UDY
+- export dynamo to s3
+  - need to change format
+- use glue to change format
+
+- need two tables, 
+  - one for the dynamodb json (feedback-orders)
+  - one for the athena result
+
+
+- export dynamo to s3
+- from the dynamodb console
+- select the s3 bucket you want!
+ 
+- created a glue database (order-feedback)
+- crawlers (order-feedback-crawler)
+- the crawler will be on demand, since we would need to export the data from dynamodb to s3 first
+- hopefully we can update that later!
+- crawler runs
+
+- athena
+  - select correct glue database in the left sidebar -> order-feedback
+-  
+
+
